@@ -13,4 +13,4 @@ Configure and prepare PhOVS to build
 2. Use cmake to fill the build directory (select the ViSP build or install directory)
 3. Open the project in build or use make in the latter directory to build the library
 
-Finalize the library setting by pasting the content of the copyContentInLibDirectory directory in the build/lib
+Finalize the library setting by pasting the content of the copyContentInLibDirectory directory in the build/lib.

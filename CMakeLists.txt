@@ -81,7 +81,7 @@ ENDIF(UNIX)
 #----------------------------------------------------------------------
 
 # ViSP-2
-FIND_PACKAGE(VISP REQUIRED)
+FIND_PACKAGE(VISP REQUIRED visp_core visp_io visp_robot visp_visual_features visp_vs visp_vision)
 IF(VISP_FOUND)
   INCLUDE(${VISP_USE_FILE})
 ENDIF(VISP_FOUND)
