@@ -122,13 +122,13 @@ CFeatureLuminanceOmni::init(int _imHeight, int _imWidth, int _di, int _dj, int _
     }
   }
 
-  //std::cout << "dim_s : " << dim_s << std::endl;
+  std::cout << "dim_s : " << dim_s << std::endl;
   s.resize(dim_s) ;
   
   if (pixInfo != NULL)
     delete [] pixInfo;
 
-switch(reptype)
+  switch(reptype)
     {
       case CARTIMAGEPLANE:
           switch(gradcomptype)

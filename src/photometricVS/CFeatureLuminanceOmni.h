@@ -123,8 +123,7 @@ public:
   int nbDOF;
   bool DOF[6];
   
-  //! Store the image (as a vector with intensity and gradient I, Ix, Iy) 
-  CLuminanceOmni *pixInfo ;
+
   int  firstTimeIn  ;
 
   //info representations
@@ -133,6 +132,9 @@ public:
   CInterpType interptype;
 
  public:
+  //! Store the image (as a vector with intensity and gradient I, Ix, Iy) 
+  CLuminanceOmni *pixInfo ;
+
   void buildFrom(vpImage<unsigned char> &I) ;
   void buildFrom(vpImage<unsigned char> &I, vpImage<float> *Idepth) ;
   void buildFrom(vpImage<unsigned char> &I, CFeatureLuminanceOmni *sd) ;
@@ -141,6 +143,10 @@ public:
   void buildFrom(vpImage<double> &I) ;
   void buildFrom(vpImage<double> &I, vpImage<float> *Idepth) ;
   void buildFrom(vpImage<double> &I, CFeatureLuminanceOmni *sd, vpImage<float> *Idepth) ;
+
+  void usedPixelsToMask(vpImage<unsigned char> &Im);
+
+//  CLuminanceOmni *get_pixInfo() { CLuminanceOmni *pt=pixInfo ; return pt; }
 
 private:
   //simple image feature
