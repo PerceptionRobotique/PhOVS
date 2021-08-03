@@ -40,6 +40,12 @@ class CImageFilter
 {
 
 public:
+  static double  laplacianFilterX(vpImage<unsigned char> &I,
+				   const int r, int c) ;
+
+  static double  laplacianFilterY(vpImage<unsigned char> &I,
+				   const int r, int c) ;
+
   static double  derivativeFilterX(vpImage<unsigned char> &I,
 				   const int r, int c) ;
 
