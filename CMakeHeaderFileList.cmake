@@ -9,10 +9,13 @@ set(HEADER_PHOTOVS
   photometricVS/CImageTools.h
   photometricVS/CImageFilter.h
   photometricVS/CFeatureLuminanceOmni.h
+  photometricVS/CFeatureDefocusedLuminance.h
   )
 
 SET(HEADER_CAMERA
   camera/CCameraOmniParameters.h
+
+  camera/CCameraThinLensParameters.h
 )
 
 SET (HEADER_ALL 

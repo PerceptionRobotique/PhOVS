@@ -15,10 +15,14 @@ SET(SRC_PHOTOVS
   photometricVS/CFeatureLuminanceOmniFeaturesdDepth.cpp
   photometricVS/CFeatureLuminanceOmniInteractionMatrix.cpp
   photometricVS/CFeatureLuminanceOmniNeighborhoods.cpp
+
+  photometricVS/CFeatureDefocusedLuminance.cpp
 )
 
 SET(SRC_CAMERA
   camera/CCameraOmniParameters.cpp
+  
+  camera/CCameraThinLensParameters.cpp
 )
 
 SET (SRC_ALL

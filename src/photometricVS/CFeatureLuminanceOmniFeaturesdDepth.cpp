@@ -223,6 +223,7 @@ CFeatureLuminanceOmni::cartesianSphericalBuildFrom(vpImage<unsigned char> &I, CF
 
   double Ix, Iy, IXs, IYs, IZs;
   double px = cam.get_px(), py = cam.get_py(), u0 = cam.get_u0(), v0 = cam.get_v0(), xi = cam.get_xi();
+  //std::cout << px << " " << py << " " << u0 << " " << v0 << " " << xi << std::endl;
   double f, dudXs, dvdYs, dudZs, dvdZs;
 	double x=0,y=0, Xs, Ys, Zs, rhotmp;
   CLuminanceOmniCS *pt_pixInfo, *pt_pixInfod;
@@ -249,7 +250,7 @@ CFeatureLuminanceOmni::cartesianSphericalBuildFrom(vpImage<unsigned char> &I, CF
 
 				if(cam.image2Sphere(x, y, Xs, Ys, Zs))
 				{
-          pt_pixInfo->Xs = Xs;
+          pt_pixInfo->Xs = Xs; 
           pt_pixInfo->Ys = Ys;
           pt_pixInfo->Zs = Zs;
 

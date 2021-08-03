@@ -389,6 +389,31 @@ CFeatureLuminanceOmni::cartesianSphericalBuildFrom(vpImage<unsigned char> &I)
 */
 
 void
+CFeatureLuminanceOmni::usedPixelsToMask(vpImage<unsigned char> &Im)
+{
+  CLuminanceOmniCS *pt_pixInfo;
+  int i, j;
+
+  Im.resize(imHeight, imWidth, false);
+  pt_pixInfo = (CLuminanceOmniCS *)pixInfo;
+
+  for(int n = 0 ; n < dim_s ; n++, pt_pixInfo++)
+  {
+    i = pt_pixInfo->i;
+    j = pt_pixInfo->j;
+    if(pt_pixInfo->toProcess && !pt_pixInfo->notToProcessCurrently)
+      Im[i][j] = 255;
+    else
+      Im[i][j] = 0;
+  }
+}
+
+/*!
+  Jan. 2020
+  Same as above for vpImage<double>
+*/
+
+void
 CFeatureLuminanceOmni::cartesianSphericalBuildFrom(vpImage<double> &I)
 {
   static int firsttime =0 ;
