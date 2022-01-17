@@ -1,6 +1,6 @@
 PhOVS: Photometric Omnidirectional Visual Servoing
 
-Library developed first at MIS, then at JRL from fall 2019
+Library developed first at MIS, then at JRL from fall 2019; put on github.com/PerceptionRobotique in 2022, where it should have been from the beginning
 Author: G. Caron
 Contact: guillaume.caron@u-picardie.fr
 
