@@ -18,7 +18,7 @@ Configure and prepare PhOVS to build
 Finalize the library setting by pasting the content of the copyContentInLibDirectory directory in the build/lib.
 
 ####################################################################################
-Copyright (C) 2017-2025 by MIS lab (UPJV). All rights reserved.
+Copyright (C) 2009-2025 by MIS lab (UPJV). All rights reserved.
 
 See http://mis.u-picardie.fr/~g-caron/fr/index.php?page=7 for more information.
 
