@@ -1,12 +1,14 @@
 PhOVS: Photometric Omnidirectional Visual Servoing
 
-Library developed first at MIS, then at JRL from fall 2019; put on github.com/PerceptionRobotique in 2022, where it should have been from the beginning
+Library developed first at UPJV's MIS lab, then at CNRS-AIST JRL from fall 2019; put on github.com/PerceptionRobotique in 2022, where it should have been from the beginning
 Author: G. Caron
 Contact: guillaume.caron@u-picardie.fr
+Main associated research article (https://inria.hal.science/hal-00829822v1): 
+Guillaume Caron, Eric Marchand, El Mustapha Mouaddib. Photometric visual servoing for omnidirectional cameras. Autonomous Robots, 2013, 35 (2-3), pp.177-193. ⟨10.1007/s10514-013-9342-3⟩.  
 
 Prerequisities
-0. CMake (version 3.14.5 tested)
-2. ViSP (version 3.2.0 tested)
+0. CMake (version 3.28.1 tested)
+2. ViSP (version 3.4.1 tested)
 
 Configure and prepare PhOVS to build
 1. Create a build directory in PhOVS
